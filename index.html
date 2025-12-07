@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>LP_ICT10_Q2Project_Sy_Briana</title>
+
+<style>
+    body {background-image: url(bignaranja.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .container {background-color: #f3af92;}
+    #nav {background-color: rgb(238, 151, 96);}
+    #res {background-color: #f5e9a5;}
+    #nameresults {font-style: italic;}
+</style>
+</head>
+<body>
+           <nav class="navbar navbar-expand-lg navbar-warning">
+        <div class="container" id="nav">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-circle me-2"></i><b>Naranja Academy</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="club.html">Path</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                <div class="container">
+<br>
+<hr>
+<br>
+                    <h4 class="mb-3" style="text-align: center;"><b>Student Grade Calculator</b></h4>
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control" id="firstname">
+                    <label for="name">Last Name</label>
+                    <input type="text" class="form-control" id="lastname">
+<br>
+<hr>
+<br>
+        <h5 class="mb-3"><b>Enter Your Grades:</b></h5>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Science</label>
+                <input type="text" class="form-control" id="science" placeholder="Grade" fdprocessedid="yhgvr">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">English</label>
+                <input type="text" class="form-control" id="english" placeholder="Grade" fdprocessedid="4sct7s">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">ICT</label>
+                <input type="text" class="form-control" id="ict" placeholder="Grade" fdprocessedid="macasa">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Math</label>
+                <input type="text" class="form-control" id="math" placeholder="Grade" fdprocessedid="zjokq1">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Filipino</label>
+                <input type="text" class="form-control" id="filipino" placeholder="Grade" fdprocessedid="vwydmq">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">PE</label>
+                <input type="text" class="form-control" id="pe" placeholder="Grade" fdprocessedid="zy20fk">
+            </div>
+        </div>
+<br>
+<br>
+            <div class="d-grid gap-2 col-md-6 mx-auto mt-4">
+                <button class="btn btn-light btn-lg" type="submit" py-click="get_grade">Calculate GWA</button>
+            </div>
+<br>
+<hr>
+<br>
+                </div>
+<br>
+        <div class="container" id="res">
+<br>
+    <div class="mt-4 text-center">
+        <h6 id="nameresults"></h6>
+        <p id="results"></p>
+<br>
+    </div>        </div>
+
+<br>
+<br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="main.py"></script><script-py id="py-0"></script-py> 
+</body>
+</html>

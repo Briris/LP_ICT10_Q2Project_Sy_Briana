@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+    <title>LP_ICT10_Q2Project_Sy_Briana</title>
+
+<style>
+    body {background-image: url(bignaranja.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    #nav {background-color: rgb(238, 151, 96);}
+    .container {background-color:  #f3af92;}
+    #about {background-color: #f5e9a5;
+        text-align: center;}
+</style>
+</head>
+<body>
+           <nav class="navbar navbar-expand-lg navbar-warning">
+        <div class="container" id="nav">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-circle me-2"></i><b>Naranja Academy</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Grade Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="club.html">Path</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+<br>
+        <h3 class="mb-3" style="text-align: center;"><b>Select A Path</b></h3>
+<hr>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h6><b>Victory Road</b></h6>
+                <button class="btn btn-light" py-click="show_path_info" id="btn_victory">Show Path Information</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <h6><b>Path of Legends</b></h6>
+                <button class="btn btn-light" py-click="show_path_info" id="btn_legends">Show Path Information</button>
+            </div>
+            <div class="col-md-4 text-center">
+                <h6><b>Starfall Street</b></h6>
+                <button class="btn btn-light" py-click="show_path_info" id="btn_starfall">Show Path Information</button>
+            </div>
+<br>
+<br>
+<br>
+</div>
+<hr>
+    <div class="container mt-4" id="about">
+        <div id="pathInfo">
+<br>
+            <h4 id="pathTitle"></h4>
+<br>
+            <p id="pathContent"></p>
+        </div>
+<br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="py" src="main2.py"></script><script-py id="py-0"></script-py> 
+</body>
+</html>
